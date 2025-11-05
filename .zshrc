@@ -9,6 +9,8 @@ export SAVEHIST=10000
 export EDITOR="nvim"
 export VISUAL="nvim"
 
+bindkey '^R' history-incremental-search-backward
+
 autoload -Uz vcs_info
 precmd() { vcs_info }
 
